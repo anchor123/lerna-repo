@@ -10,7 +10,10 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "update": "lerna version --no-private --exact --loglevel silly --yes",
+    "bugfix": "lerna version --loglevel silly --exact --no-private --conventional-prerelease --amend --preid \"alpha.$(git rev-parse --short HEAD)\" --yes",
+    "feature": "lerna version --loglevel silly --exact --no-private --conventional-prerelease --amend --preid \"alpha.$(git rev-parse --short HEAD)\" --yes",
+    "dev": "lerna version --no-private --loglevel silly --exact --conventional-prerelease --preid beta --yes",
+    "publish": "lerna version --no-private --exact --loglevel silly --yes",
     "serve": "lerna run --parallel watch",
     "commit": "git-cz"
   },
