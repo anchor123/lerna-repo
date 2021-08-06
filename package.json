@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
-    "version": "lerna version --no-private --exact --loglevel silly",
+    "version": "lerna version --no-private --exact --loglevel silly --yes",
     "serve": "lerna run --parallel watch",
     "commit": "git-cz"
   },
@@ -18,5 +18,6 @@
     "commitizen": {
       "path": "node_modules/cz-conventional-changelog"
     }
-  }
+  },
+  "version": "1.0.1"
 }
