@@ -4,5 +4,36 @@
   ],
   "version": "0.1.0",
   "npmClient": "yarn",
-  "useWorkspaces": true
+  "useWorkspaces": true,
+  "command": {
+    "publish": {
+      "ignoreChanges": [
+        "*.md",
+        "package-lock.json"
+      ],
+      "conventionalCommits": true,
+      "message": "chore(release): publish",
+      "verifyAccess": false
+    },
+    "version": {
+      "ignoreChanges": [
+        "*.md",
+        "package-lock.json"
+      ],
+      "conventionalCommits": true,
+      "allowBranch": [
+        "master",
+        "feature/*",
+        "bugfix/*",
+        "dev"
+      ]
+    },
+    "bootstrap": {
+      "ignore": "component-*",
+      "npmClientArgs": [
+        "--no-optional",
+        "--frozen-lockfile"
+      ]
+    }
+  }
 }
