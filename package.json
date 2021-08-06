@@ -13,7 +13,7 @@
     "bugfix": "lerna version --loglevel silly --exact --no-private --conventional-prerelease --amend --preid \"alpha.$(git rev-parse --short HEAD)\" --yes",
     "feature": "lerna version --loglevel silly --exact --no-private --conventional-prerelease --amend --preid \"alpha.$(git rev-parse --short HEAD)\" --yes",
     "dev": "lerna version --no-private --loglevel silly --exact --conventional-prerelease --preid beta --yes",
-    "publish": "lerna version --no-private --exact --loglevel silly --yes",
+    "update": "lerna version --no-private --exact --loglevel silly --yes",
     "serve": "lerna run --parallel watch",
     "commit": "git-cz"
   },
@@ -22,5 +22,5 @@
       "path": "node_modules/cz-conventional-changelog"
     }
   },
-  "version": "1.0.1"
+  "version": "0.1.0"
 }
