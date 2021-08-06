@@ -10,6 +10,7 @@
   ],
   "scripts": {
     "bootstrap": "lerna bootstrap",
+    "version": "lerna version --no-private --exact --loglevel silly",
     "serve": "lerna run --parallel watch",
     "commit": "git-cz"
   },
